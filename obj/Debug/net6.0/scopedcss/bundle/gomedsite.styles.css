@@ -1,0 +1,134 @@
+/* _content/gomedsite/Shared/MainLayout.razor.rz.scp.css */
+.page[b-rr1pax8cmy] {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+main[b-rr1pax8cmy] {
+    flex: 1;
+}
+
+.sidebar[b-rr1pax8cmy] {
+    background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
+}
+
+.top-row[b-rr1pax8cmy] {
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #d6d5d5;
+    justify-content: flex-end;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+}
+
+    .top-row[b-rr1pax8cmy]  a, .top-row .btn-link[b-rr1pax8cmy] {
+        white-space: nowrap;
+        margin-left: 1.5rem;
+    }
+
+    .top-row a:first-child[b-rr1pax8cmy] {
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+@media (max-width: 640.98px) {
+    .top-row:not(.auth)[b-rr1pax8cmy] {
+        display: none;
+    }
+
+    .top-row.auth[b-rr1pax8cmy] {
+        justify-content: space-between;
+    }
+
+    .top-row a[b-rr1pax8cmy], .top-row .btn-link[b-rr1pax8cmy] {
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 641px) {
+    .page[b-rr1pax8cmy] {
+        flex-direction: row;
+    }
+
+    .sidebar[b-rr1pax8cmy] {
+        width: 250px;
+        height: 100vh;
+        position: sticky;
+        top: 0;
+    }
+
+    .top-row[b-rr1pax8cmy] {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+
+    .top-row[b-rr1pax8cmy], article[b-rr1pax8cmy] {
+        padding-left: 2rem !important;
+        padding-right: 1.5rem !important;
+    }
+}
+/* _content/gomedsite/Shared/NavMenu.razor.rz.scp.css */
+.navbar-toggler[b-e909018h25] {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.top-row[b-e909018h25] {
+    height: 3.5rem;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.navbar-brand[b-e909018h25] {
+    font-size: 1.1rem;
+}
+
+.oi[b-e909018h25] {
+    width: 2rem;
+    font-size: 1.1rem;
+    vertical-align: text-top;
+    top: -2px;
+}
+
+.nav-item[b-e909018h25] {
+    font-size: 0.9rem;
+    padding-bottom: 0.5rem;
+}
+
+    .nav-item:first-of-type[b-e909018h25] {
+        padding-top: 1rem;
+    }
+
+    .nav-item:last-of-type[b-e909018h25] {
+        padding-bottom: 1rem;
+    }
+
+    .nav-item[b-e909018h25]  a {
+        color: #d7d7d7;
+        border-radius: 4px;
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        line-height: 3rem;
+    }
+
+.nav-item[b-e909018h25]  a.active {
+    background-color: rgba(255,255,255,0.25);
+    color: white;
+}
+
+.nav-item[b-e909018h25]  a:hover {
+    background-color: rgba(255,255,255,0.1);
+    color: white;
+}
+
+@media (min-width: 641px) {
+    .navbar-toggler[b-e909018h25] {
+        display: none;
+    }
+
+    .collapse[b-e909018h25] {
+        /* Never collapse the sidebar for wide screens */
+        display: block;
+    }
+}
